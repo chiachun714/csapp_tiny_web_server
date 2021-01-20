@@ -3,7 +3,6 @@ Solutions of CSAPP chapter 11 homework 11.6 ~ 11.13
 
 ### Command 
 - You can use `./tiny <port>` to create listenning server.
-- 
 
 
 #### 11.6 Modify Tiny so that it echoes every request line and request header.
@@ -28,6 +27,6 @@ Solutions of CSAPP chapter 11 homework 11.6 ~ 11.13
 
 #### 11.12 Extend Tiny so that it serves dynamic content requested by the HTTP POST method.
 Modification
-  - 1. Extend Tiny so that it serves dynamic content requested by the HTTP POST method.
-  - 2. read_requesthdrs function will return the request message body length if request method is POST, else 0.
-  - 3. doit function use the integer which read_requesthdrs function returned to read the request message body in "buf" array, if request method is POST, the "buf" will be the third function parameter of serve_dynamic function instead of "cgiargs".
+1. Extend Tiny so that it serves dynamic content requested by the HTTP POST method.
+2. read_requesthdrs function will return the request message body length if request method is POST, else 0.
+3. doit function use the integer which read_requesthdrs function returned to read the request message body in "buf" array, if request method is POST, the "buf" will be the third function parameter of serve_dynamic function instead of "cgiargs".
