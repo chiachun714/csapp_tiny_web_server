@@ -12,8 +12,8 @@ Solutions of CSAPP chapter 11 homework 11.6 ~ 11.13
 - Extend `get_fileType` function so that Tiny serves MPG video files.
 
 #### 11.8 Modify Tiny so that it reaps CGI children inside a `SIGCHLD` handler instead of explicitly waiting for them to terminate.
-1. Create a sigchld_handler function which reaps CGI children so that Tiny doesn't have to explicitly wait for them to terminate.
-2. Add a signal handler error-handling in main function.
+1. Create a `sigchld_handler` function which reaps CGI children so that Tiny doesn't have to explicitly wait for them to terminate.
+2. Add a `signal handler` error-handling in main function.
 
 #### 11.10 Write an HTML form for the CGI adder function, the form should request content using the GET method.
 1. Add html form in `home.html`.
